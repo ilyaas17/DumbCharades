@@ -11,8 +11,6 @@ export default function App() {
         <Route path='/game' element={<Game/>}/>
         <Route path='/greet' element={<Greeting/>} />
       </Routes>
-      <b>LALALALALA
-      </b>
     </div>
 
   )
