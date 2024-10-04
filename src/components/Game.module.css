@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    background: -moz-linear-gradient();
+}
+
+body {
+    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/008/023/852/small_2x/abstract-colorful-geometric-shape-background-modern-color-background-for-your-website-vector.jpg");
+    background-size: cover; /* Ensure the image covers the entire background */
+    background-position: center; /* Center the background image */
+    min-height: 100vh; /* Ensures background covers the entire viewport height */
+  }
+.card {
+    background-color: rgb(237, 228, 228);
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.134);
+    padding: 60px;
+    max-width: 500px;
+    margin: 25px auto;
+    text-align: center;
+    margin-top: 150px;
+  }
+  
+  .question {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .hint {
+    font-size: 16px;
+    color: red;
+    margin-bottom: 5px;
+  }
+  
+  .inputField {
+    width: 50%;
+    margin-right: 20px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px 5px;
+  }
+  
+  
+  .score {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 20px;
+  }

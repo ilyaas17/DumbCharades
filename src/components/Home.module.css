@@ -1,0 +1,102 @@
+@keyframes gradientShift {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  .main{
+      height: 100vh;
+      background: linear-gradient(135deg, #1a2a6c,#b21f1f, #fdbb2d);
+      background-size: 300% 300%;
+      animation: gradientShift 5s ease infinite;
+  }
+  .heading{
+      font-family: monospace;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 30%;
+      font-size: 5rem;
+  }
+  .home {
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card {
+    display: flex;
+    justify-content: center;
+    width: 30vw;
+    max-height: 50vh;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 25px;
+    padding: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    flex-direction: column;
+    text-align: center;
+    transition: transform 0.6s ease, box-shadow 0.6s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 15px 45px rgba(5, 117, 230, 0.8);
+  }
+  
+  .usernameLabel {
+      font-size: 1.8rem;
+      color: #fff;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      position: relative;
+      display: inline-block;
+      margin-bottom: 10px;
+      transition: color 0.3s ease-in-out;
+    }
+    
+    .usernameLabel::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      width: 0;
+      height: 3px;
+      background-color: #00F260;
+      transition: width 0.4s ease-in-out;
+    }
+    
+    .usernameLabel:hover::before {
+      width: 100%;
+    }
+    
+    .usernameLabel:hover {
+      color: #00F260;
+    }
+  
+  .usernameInput {
+    width: calc(100% - 30px);
+    padding: 15px;
+    margin: 10px;
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 1.3rem;
+    margin-top: 20px;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+  }
+  
+  .usernameInput:focus {
+    outline: none;
+    transform: scale(1.05);
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.6), 0 0 15px rgba(255, 255, 255, 0.6) inset;
+  }
